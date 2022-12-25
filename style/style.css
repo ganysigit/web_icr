@@ -1,0 +1,22 @@
+/* ----------> Index Page Style Here <----------*/
+
+.bg-img {
+    background-image: url('../assets/page1/bg_blank.png');
+    background-size: cover;
+    min-height: 1000px;
+}
+
+.logo {
+    margin-top: 100px;
+}
+
+.daftar-button {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -200px;
+}
+
+.bottom-img {
+    position: relative;
+    z-index: 1;
+}
