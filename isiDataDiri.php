@@ -1,6 +1,5 @@
 <?php
 session_start();
-var_dump($_SESSION['tmpnama_anak']);
 ?>
 
 <!DOCTYPE html>
@@ -73,9 +72,8 @@ var_dump($_SESSION['tmpnama_anak']);
                             <div class="col-sm-10">
                                 <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example" name="provinsi">
                                     <option selected>Provinsi</option>
-                                    <option value="Jawa Timur">Jawa Timur</option>
-                                    <option value="Jawa Tengah">Jawa Tengah</option>
-                                    <option value="Jawa Barat">Jawa Barat</option>
+                                    <option value="tangerang">Tangerang</option>
+                                    <option value="tangerang_selatan">Tangerang Selatan</option>
                                 </select>
                             </div>
                         </div>
@@ -85,8 +83,10 @@ var_dump($_SESSION['tmpnama_anak']);
                             <div class="col-sm-10">
                                 <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example" name="centre_terdekat">
                                     <option selected>Pilih Centre Terdekat</option>
-                                    <option value="alam_suteru">Alam Suter</option>
+                                    <option value="alam_sutera">Alam Sutera</option>
                                     <option value="bintaro">Bintaro</option>
+                                    <option value="bsd_city1">BSD City 1</option>
+                                    <option value="bsd_city2">BSD City 2</option>
                                 </select>
                             </div>
                         </div>
