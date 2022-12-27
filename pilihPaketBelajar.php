@@ -5,11 +5,14 @@ $tmpumur_anak = $_SESSION['tmpumur_anak'];
 $tmpasal_sekolah = $_SESSION['tmpasal_sekolah'];
 $tmpnama_orangtua = $_SESSION['tmpnama_orangtua'];
 $tmpnohp_orangtua = $_SESSION['tmpnohp_orangtua'];
-$tmpprovinsi = $_SESSION['tmpprovinsi'];
 $tmpcentre_terdekat = $_SESSION['tmpcentre_terdekat'];
 
-$dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpprovinsi, $tmpcentre_terdekat);
+$dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpcentre_terdekat);
 echo implode(", ", $dataAll);
+
+if($tmpnama_anak == '') {
+    header("Location: index.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +22,7 @@ echo implode(", ", $dataAll);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style/pilihPaketBelajar.css">
-    <title>I Can Read</title>
+    <title>I Can Read - Paket Belajar</title>
 </head>
 <body>
     <div class="bg-img">

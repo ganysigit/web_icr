@@ -1,16 +1,18 @@
 <?php
+
 session_start();
+require "./database/insertDB.php";
+
 $tmpnama_anak = $_SESSION['tmpnama_anak'];
 $tmpumur_anak = $_SESSION['tmpumur_anak'];
 $tmpasal_sekolah = $_SESSION['tmpasal_sekolah'];
 $tmpnama_orangtua = $_SESSION['tmpnama_orangtua'];
 $tmpnohp_orangtua = $_SESSION['tmpnohp_orangtua'];
-$tmpprovinsi = $_SESSION['tmpprovinsi'];
 $tmpcentre_terdekat = $_SESSION['tmpcentre_terdekat'];
 $tmppaket = $_SESSION['tmppaket'];
 $tmpangpao = $_SESSION['tmpangpao'];
 
-$dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpprovinsi, $tmpcentre_terdekat, $tmppaket,);
+$dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpcentre_terdekat, $tmppaket,);
 echo implode(", ", $dataAll) . ", " . $tmpangpao;
 
 // ---------- > Convert Array to String < ---------- //
@@ -318,5 +320,7 @@ else {
     echo 'Error Centre Terdekat Not Found';
 }
 
+// ---------- > Destroy Whole Session < ---------- //
+session_destroy();
 
 ?>

@@ -31,58 +31,47 @@ session_start();
                         <img class="logo" src="assets/page1/logo.png" alt="" width="720">
                     </div>
                     <!--------------- Form Isi Data  --------------->
-                    <form method="POST" action="pilihPaketBelajar.php">
+                    <form method="POST" action="pilihPaketBelajar.php" name="thisForm" onsubmit="return validateForm()">
                         <div class="mb-3 row">
                             <label class="col-sm-2 col-form-label"><h4 class="form-name">Nama Anak</h4></label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="nama_anak" placeholder="Alessia Han">
+                                <input type="text" class="form-control" name="nama_anak" placeholder="Alessia Han" required>
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label class="col-sm-2 col-form-label"><h4 class="form-name">Umur Anak</h4></label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="umur_anak" placeholder="12">
+                                <input type="text" class="form-control" name="umur_anak" placeholder="12" required>
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label class="col-sm-2 col-form-label"><h4 class="form-name">Asal Sekolah</h4></label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="asal_sekolah" placeholder="SD Aditama">
+                                <input type="text" class="form-control" name="asal_sekolah" placeholder="SD Aditama" required>
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label class="col-sm-2 col-form-label"><h4 class="form-name">Nama Orang Tua</h4></label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="nama_orangtua" placeholder="Mellie Han">
+                                <input type="text" class="form-control" name="nama_orangtua" placeholder="Mellie Han" required>
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label class="col-sm-2 col-form-label"><h4 class="form-name">No. HP Orang Tua</h4></label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="nohp_orangtua" placeholder="08626365618">
-                            </div>
-                        </div>
-
-                        <div class="mb-3 row">
-                            <label class="col-sm-2 col-form-label"><h4 class="form-name">Provinsi</h4></label>
-                            <div class="col-sm-10">
-                                <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example" name="provinsi">
-                                    <option selected>Provinsi</option>
-                                    <option value="tangerang">Tangerang</option>
-                                    <option value="tangerang_selatan">Tangerang Selatan</option>
-                                </select>
+                                <input type="text" class="form-control" name="nohp_orangtua" placeholder="08626365618" required>
                             </div>
                         </div>
 
                         <div class="mb-3 row">
                             <label class="col-sm-2 col-form-label"><h4 class="form-name">Centre Terdekat</h4></label>
                             <div class="col-sm-10">
-                                <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example" name="centre_terdekat">
-                                    <option selected>Pilih Centre Terdekat</option>
+                                <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example" name="centre_terdekat" required>
+                                    <option value="">Pilih Centre Terdekat</option>
                                     <option value="alam_sutera">Alam Sutera</option>
                                     <option value="bintaro">Bintaro</option>
                                     <option value="bsd_city1">BSD City 1</option>
@@ -102,6 +91,6 @@ session_start();
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+    
 </body>
 </html>
