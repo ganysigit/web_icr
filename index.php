@@ -9,6 +9,15 @@
     <title>I Can Read</title>
 </head>
 <body>
+
+    <audio id="audioplayer" src="assets/audio/bg_audio.mp3" type="audio/mpeg" loop="loop"></audio>
+    <script>
+        window.onload = function() {
+            document.getElementById("audioplayer").play();
+        }
+    </script>
+
+
     <div class="bg-img">
         <div class="container-sm d-flex justify-content-between top-text pt-5">
             <div class="d-flex align-items-center ">

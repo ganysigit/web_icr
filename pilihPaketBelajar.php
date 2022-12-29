@@ -25,6 +25,7 @@ if($tmpnama_anak == '') {
     <title>I Can Read - Paket Belajar</title>
 </head>
 <body>
+
     <div class="bg-img">
         <!--------------- Tulisan di Kiri dan Kanan  --------------->
         <div class="container-sm d-flex justify-content-between top-text pt-5">
