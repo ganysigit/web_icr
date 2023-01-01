@@ -9,7 +9,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/isiDataDiri.css">
+    <link rel="stylesheet" href="style/pageDataDiri.css">
     <title>I Can Read - Isi Data Diri</title>
 </head>
 <body>
@@ -17,18 +17,18 @@ session_start();
         <!--------------- Tulisan di Kiri dan Kanan  --------------->
         <div class="container-sm d-flex justify-content-between top-text pt-5">
             <div class="d-flex align-items-center ">
-                <img src="assets/page1/bg_text_top_left.png" alt="" width="400px">
+                <img class="text-tl" src="assets/page1/bg_text_top_left.png" alt="">
             </div>
 
             <div class="d-flex align-items-center">
-                <img src="assets/page1/bg_test_top_right.png" alt="" width="400px">
+                <img class="text-tr" src="assets/page1/bg_test_top_right.png" alt="">
             </div>
         </div>
         <div class="container d-flex justify-content-center">
             <div class="flex-column cont-form">
                     <!--------------- Logo  --------------->
                     <div class="d-flex justify-content-center">
-                        <img class="logo" src="assets/page1/logo.png" alt="" width="720">
+                        <img class="logo" src="assets/page1/logo.png" alt="">
                     </div>
                     <!--------------- Form Isi Data  --------------->
                     <form method="POST" action="pilihPaketBelajar.php" name="thisForm" onsubmit="return validateForm()">
@@ -127,7 +127,7 @@ session_start();
                         <!--------------- Button Submit  --------------->
                         <div class="button-selesai d-flex justify-content-end">
                             <button type="submit" name="submit" style="border: 0; all:unset; cursor: pointer;" >
-                                <img src="assets/child_page2/button_selesai.png" alt="submit" width="268px">
+                                <img class="btn-img" src="assets/child_page2/button_selesai.png" alt="submit">
                             </button>
                         </div>
                     </form>

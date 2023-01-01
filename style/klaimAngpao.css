@@ -1,0 +1,16 @@
+
+/* ----------> Isi Data Diri Page Style Here <----------*/
+
+.prize > img {
+    width: 1000px;
+}
+
+@media screen and (max-width: 767px) {
+    .prize > img {
+        width: 300px;
+    }
+
+    .klaim-button {
+        width: 150px;
+    }
+}

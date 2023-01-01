@@ -30,11 +30,11 @@ if($tmpnama_anak == '') {
         <!--------------- Tulisan di Kiri dan Kanan  --------------->
         <div class="container-sm d-flex justify-content-between top-text pt-5">
             <div class="d-flex align-items-center ">
-                <img src="assets/page1/bg_text_top_left.png" alt="" width="400px">
+                <img class="text-tl" src="assets/page1/bg_text_top_left.png" alt="">
             </div>
 
             <div class="d-flex align-items-center">
-                <img src="assets/page1/bg_test_top_right.png" alt="" width="400px">
+                <img class="text-tr" src="assets/page1/bg_test_top_right.png" alt="">
             </div>
         </div>
         
@@ -43,7 +43,7 @@ if($tmpnama_anak == '') {
             <div class="flex-column">
                 <!--------------- Logo --------------->
                 <div class="mt-5 d-flex justify-content-center">
-                    <img class="logo" src="assets/page1/logo.png" alt="" width="360">
+                    <img class="logo" src="assets/page1/logo.png" alt="">
                 </div>
                 <!--------------- Tulisan Pilih Paketmu  --------------->
                 <div class="pb-5 d-flex justify-content-center">
@@ -55,8 +55,8 @@ if($tmpnama_anak == '') {
                         <div class="d-flex flex-column mb-3">
 
                             <input id="paket12" type="radio" class="input-hidden" name="paket" value="paket_12" class="mt-3" style="width: 600px;">
-                            <label for="paket12" class="d-flex flex-column mb-3">
-                                <img src="assets/child_page3/paket12.png" alt="paket12" width="600">
+                            <label for="paket12" class="d-flex flex-column mb-3 pilih-paket">
+                                <img src="assets/child_page3/paket12.png" alt="paket12">
                             </label>
                             
                         </div>
@@ -64,8 +64,8 @@ if($tmpnama_anak == '') {
                         <div class="d-flex flex-column mb-3">
                             
                             <input id="paket6" type="radio" class="input-hidden" name="paket" value="paket_6" class="mt-3" style="width: 600px;">
-                            <label for="paket6" class="d-flex flex-column mb-3">
-                                <img src="assets/child_page3/paket6.png" alt="paket6" width="600">
+                            <label for="paket6" class="d-flex flex-column mb-3 pilih-paket">
+                                <img src="assets/child_page3/paket6.png" alt="paket6" >
                             </label>
                         
                         </div>
@@ -73,7 +73,7 @@ if($tmpnama_anak == '') {
                 
                     <!--------------- Button Submit  --------------->
                     <div class="d-flex justify-content-center pb-5">
-                        <button type="submit" name="submit" style="border: 0; background: none;" >
+                        <button class="btn-img" type="submit" name="submit" style="border: 0; background: none;" >
                             <img src="assets/child_page2/button_selesai.png" alt="submit" width="268px">
                         </button>
                     </div>

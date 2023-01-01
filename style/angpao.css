@@ -1,0 +1,18 @@
+.angpao:hover {
+    margin-top: -25px;
+}
+
+.angpao > img {
+    width: 400px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .bg-img {
+        min-height: 800px;
+    }
+
+    .angpao > img {
+        width: 120px;
+    }
+}

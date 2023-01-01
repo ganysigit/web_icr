@@ -1,5 +1,10 @@
+/* ----------> Isi Data Diri Page Style Here <----------*/
 
-/* ----------> Pilih Paket Belajar Page Style Here <----------*/
+.cont-form {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 00px;
+}
 
 .bg-img {
     background-image: url('../assets/page1/bg_blank.png');
@@ -8,30 +13,25 @@
 }
 
 .logo {
-    margin-top: 50px;
-    width: 360px;
+    margin-top: 100px;
+    width: 720px;
 }
 
-.pilih-paket > img {
-    width: 600px;
+.form-name {
+    color: white;
 }
 
-/* ----------> Animasi Radio Button ketika checked <----------*/
-
-.input-hidden {
-    display: none;
+.button-selesai {
+    width: 100%;
+    margin-bottom: 50px;
 }
 
-label {
-    cursor: pointer;
+.btn-img {
+    width: 268px;
 }
 
-input[type=radio] + label>img {
-    transition: 500ms all;
-}
-
-input[type=radio]:checked + label>img {
-    margin-top: -50px;
+.top-text {
+    padding-top: 150px;
 }
 
 .text-tl {
@@ -41,6 +41,8 @@ input[type=radio]:checked + label>img {
 .text-tr {
     width: 400px;
 }
+
+
 
 @media screen and (max-width: 767px) {
     .bg-img {
@@ -65,11 +67,12 @@ input[type=radio]:checked + label>img {
         width: 100px;
     }
 
-    .pilih-paket > img {
-        width: 150px;
+    .button-selesai {
+        justify-content: center!important;
     }
 
-    .btn-img > img {
+    .btn-img {
         width: 200px;
     }
+
 }

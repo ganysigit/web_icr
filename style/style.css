@@ -8,6 +8,7 @@
 
 .logo {
     margin-top: 100px;
+    width: 720px;
 }
 
 .daftar-button {
@@ -20,3 +21,9 @@
     position: relative;
     z-index: 1;
 }
+
+/* @media screen and (max-width: 767px) {
+    .logo {
+        width: 20px;
+    }
+} */

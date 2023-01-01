@@ -19,6 +19,7 @@ echo implode(", ", $dataAll);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style/pilihPaketBelajar.css">
+    <link rel="stylesheet" href="style/angpao.css">
     <title>I Can Read - Angpao</title>
 </head>
 <body>
@@ -26,11 +27,11 @@ echo implode(", ", $dataAll);
         <!--------------- Tulisan di Kiri dan Kanan  --------------->
         <div class="container-sm d-flex justify-content-between top-text pt-5">
             <div class="d-flex align-items-center ">
-                <img src="assets/page1/bg_text_top_left.png" alt="" width="400px">
+                <img class="text-tl" src="assets/page1/bg_text_top_left.png" alt="" width="400px">
             </div>
 
             <div class="d-flex align-items-center">
-                <img src="assets/page1/bg_test_top_right.png" alt="" width="400px">
+                <img class="text-tr" src="assets/page1/bg_test_top_right.png" alt="" width="400px">
             </div>
         </div>
         
@@ -47,16 +48,16 @@ echo implode(", ", $dataAll);
                 </div>
                 <!--------------- Gambar 3 Angpao  --------------->
                 <div class="d-flex flex-row">
-                    <a href="function/processRandomAngpao12.php">
-                        <img src="assets/child_page4/angpao.png" alt="" width="400">
+                    <a class="angpao" onclick='alertAngpao()' style="transition: 500ms all; -webkit-transition: 500ms all; cursor: pointer;" >
+                        <img src="assets/child_page4/angpao.png" alt="">
                     </a>
 
-                    <a href="function/processRandomAngpao12.php">
-                        <img src="assets/child_page4/angpao.png" alt="" width="400">
+                    <a class="angpao" onclick='alertAngpao()' style="transition: 500ms all; -webkit-transition: 500ms all; cursor: pointer;" >
+                        <img src="assets/child_page4/angpao.png" alt="">
                     </a>
 
-                    <a href="function/processRandomAngpao12.php">
-                        <img src="assets/child_page4/angpao.png" alt="" width="400">
+                    <a class="angpao" onclick='alertAngpao()' style="transition: 500ms all; -webkit-transition: 500ms all; cursor: pointer;" >
+                        <img src="assets/child_page4/angpao.png" alt="">
                     </a>
                 </div>
 
@@ -65,6 +66,11 @@ echo implode(", ", $dataAll);
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+    <script type="text/javascript">
+        function alertAngpao() {              
+            alert("Selamat, Anda Telah Mendapatkan Promo Cas Cis Cus");
+            window.location.href = "function/processRandomAngpao12.php";
+        }
+    </script>
 </body>
 </html>

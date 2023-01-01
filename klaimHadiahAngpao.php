@@ -27,6 +27,7 @@ if(!isset($_SESSION['tmpangpao'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style/pilihPaketBelajar.css">
+    <link rel="stylesheet" href="style/klaimAngpao.css">
     <title>I Can Read - Klaim Hadiah Angpao</title>
 </head>
 <body>
@@ -34,11 +35,11 @@ if(!isset($_SESSION['tmpangpao'])) {
         <!--------------- Tulisan di Kiri dan Kanan  --------------->
         <div class="container-sm d-flex justify-content-between top-text pt-5">
             <div class="d-flex align-items-center ">
-                <img src="assets/page1/bg_text_top_left.png" alt="" width="400px">
+                <img class="text-tl" src="assets/page1/bg_text_top_left.png" alt="" width="400px">
             </div>
 
             <div class="d-flex align-items-center">
-                <img src="assets/page1/bg_test_top_right.png" alt="" width="400px">
+                <img class="text-tr" src="assets/page1/bg_test_top_right.png" alt="" width="400px">
             </div>
         </div>
         
@@ -63,20 +64,20 @@ if(!isset($_SESSION['tmpangpao'])) {
                 global $tmpangpao;
                 if($tmpangpao == "2-month") {
                     ?>
-                    <div class="mt-5 d-flex justify-content-center">
-                        <img src="assets/imgPrize/prizePaket12_2bln.png" alt="" width="1000">
+                    <div class="mt-5 d-flex justify-content-center prize">
+                        <img src="assets/imgPrize/prizePaket12_2bln.png" alt="">
                     </div>
                     <?php
                 } elseif ($tmpangpao == "1-month") {
                     ?>
-                    <div class="mt-5 d-flex justify-content-center">
-                        <img src="assets/imgPrize/prizePaket12_1bln.png" alt="" width="1000">
+                    <div class="mt-5 d-flex justify-content-center prize">
+                        <img src="assets/imgPrize/prizePaket12_1bln.png" alt="">
                     </div>
                     <?php
                 } elseif ($tmpangpao == "1-week") {
                     ?>
-                    <div class="mt-5 d-flex justify-content-center">
-                        <img src="assets/imgPrize/prizePaket12_1week.png" alt="" width="1000">
+                    <div class="mt-5 d-flex justify-content-center prize">
+                        <img src="assets/imgPrize/prizePaket12_1week.png" alt="">
                     </div>
                     <?php
                 }
@@ -84,9 +85,9 @@ if(!isset($_SESSION['tmpangpao'])) {
 
         ?>
         <!--------------- Gambar Hadiah Angpao --------------->
-        <div class="pb-5 d-flex justify-content-center">
+        <div class="mt-5 pb-5 d-flex justify-content-center">
             <a href="function/processDone.php">
-                <img class="daftar-button" src="assets/child_page2/button_selesai.png" alt="" width="360">
+                <img class="klaim-button" src="assets/child_page2/button_selesai.png" alt="" width="360">
             </a>
         </div>
 

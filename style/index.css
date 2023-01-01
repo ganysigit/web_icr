@@ -1,0 +1,71 @@
+/* ----------> Index Page Style Here <----------*/
+
+.bg-img {
+    background-image: url('../assets/page1/bg_blank.png');
+    background-size: cover;
+    min-height: 1000px;
+}
+
+.logo {
+    margin-top: 0;
+    width: 720px;
+}
+
+.daftar-button {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -200px;
+    width: 360px;
+}
+
+.bottom-img {
+    position: relative;
+    z-index: 1;
+    width: 1020px;
+}
+
+.top-text {
+    padding-top: 20px;
+}
+
+.text-tl {
+    width: 400px;
+}
+
+.text-tr {
+    width: 400px;
+}
+
+@media screen and (max-width: 767px) {
+    .bg-img {
+        min-height: auto;
+    }
+
+    .logo {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        width: 200px;
+    }
+
+    .bottom-img {
+        width: 320px;
+    }
+
+    .daftar-button {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 200px;
+    }
+
+    .top-text {
+        padding-top: 50px;
+    }
+
+    .text-tl {
+        width: 100px;
+    }
+    
+    .text-tr {
+        width: 100px;
+    }
+}
