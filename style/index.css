@@ -3,12 +3,12 @@
 .bg-img {
     background-image: url('../assets/page1/bg_blank.png');
     background-size: cover;
-    min-height: 1000px;
+    min-height: auto;
 }
 
 .logo {
     margin-top: 0;
-    width: 720px;
+    width: 600px;
 }
 
 .daftar-button {
@@ -34,6 +34,42 @@
 
 .text-tr {
     width: 400px;
+}
+
+@media screen and (min-width: 2500px){
+    .bg-img {
+        min-height: 1100px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1900px){
+    .bottom-img {
+        width: 980px;
+    }
+
+    .logo {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px){
+    .logo {
+        width: 300px;
+    }
+
+    .bg-img {
+        background-image: url('../assets/page1/bg_blank.png');
+        background-size: cover;
+        min-height: auto;
+    }
+
+    .daftar-button {
+        width: 300px;
+    }
+
+    .bottom-img {
+        width: 800px;
+    }
 }
 
 @media screen and (max-width: 767px) {

@@ -10,13 +10,26 @@
 </head>
 <body>
 
-    <audio id="audioplayer" src="assets/audio/bg_audio.mp3" type="audio/mpeg" loop="loop"></audio>
-    <script>
-        window.onload = function() {
-            document.getElementById("audioplayer").play();
+    <!-- <audio autoplay loop  id="playAudio">
+        <source src="assets/audio/bg_audio.mp3">
+    </audio> -->
+
+    <!-- <audio autoplay>
+        <source src="assets/audio/bg_audio.ogg" type="audio/ogg">
+        <source src="assets/audio/bg_audio.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <audio id="myAudio" autoplay>
+        <source src="assets/audio/bg_audio.ogg" type="audio/ogg">
+        <source src="assets/audio/bg_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("myAudio").autoplay;
         }
     </script>
-
 
     <div class="bg-img">
         <div class="container-sm d-flex justify-content-between top-text">

@@ -13,8 +13,8 @@ if(!isset($_SESSION['tmpangpao'])) {
     $tmppaket = $_SESSION['tmppaket'];
     $tmpangpao = $_SESSION['tmpangpao'];
 
-    $dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpcentre_terdekat, $tmppaket,);
-    echo implode(", ", $dataAll) . ", " . $tmpangpao;
+    // $dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpcentre_terdekat, $tmppaket,);
+    // echo implode(", ", $dataAll) . ", " . $tmpangpao;
 }
 
 ?>

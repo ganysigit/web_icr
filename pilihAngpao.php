@@ -1,15 +1,15 @@
 <?php
 include "function/getSessionPaket.php";
-$tmpnama_anak = $_SESSION['tmpnama_anak'];
-$tmpumur_anak = $_SESSION['tmpumur_anak'];
-$tmpasal_sekolah = $_SESSION['tmpasal_sekolah'];
-$tmpnama_orangtua = $_SESSION['tmpnama_orangtua'];
-$tmpnohp_orangtua = $_SESSION['tmpnohp_orangtua'];
-$tmpcentre_terdekat = $_SESSION['tmpcentre_terdekat'];
-$tmppaket = $_SESSION['tmppaket'];
+// $tmpnama_anak = $_SESSION['tmpnama_anak'];
+// $tmpumur_anak = $_SESSION['tmpumur_anak'];
+// $tmpasal_sekolah = $_SESSION['tmpasal_sekolah'];
+// $tmpnama_orangtua = $_SESSION['tmpnama_orangtua'];
+// $tmpnohp_orangtua = $_SESSION['tmpnohp_orangtua'];
+// $tmpcentre_terdekat = $_SESSION['tmpcentre_terdekat'];
+// $tmppaket = $_SESSION['tmppaket'];
 
-$dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpcentre_terdekat, $tmppaket);
-echo implode(", ", $dataAll);
+// $dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpcentre_terdekat, $tmppaket);
+// echo implode(", ", $dataAll);
 ?>
 <!DOCTYPE html>
 <html lang="en">
