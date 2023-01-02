@@ -13,8 +13,8 @@ if(!isset($_SESSION['tmpangpao'])) {
     $tmppaket = $_SESSION['tmppaket'];
     $tmpangpao = $_SESSION['tmpangpao'];
 
-    // $dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpcentre_terdekat, $tmppaket,);
-    // echo implode(", ", $dataAll) . ", " . $tmpangpao;
+    $dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpcentre_terdekat, $tmppaket,);
+    echo implode(", ", $dataAll) . ", " . $tmpangpao;
 }
 
 ?>
@@ -65,19 +65,25 @@ if(!isset($_SESSION['tmpangpao'])) {
                 if($tmpangpao == "2-month") {
                     ?>
                     <div class="mt-5 d-flex justify-content-center prize">
-                        <img src="assets/imgPrize/prizePaket12_2bln.png" alt="">
+                        <img src="assets/imgPrize/prizePaket12_2-month.png" alt="">
                     </div>
                     <?php
                 } elseif ($tmpangpao == "1-month") {
                     ?>
                     <div class="mt-5 d-flex justify-content-center prize">
-                        <img src="assets/imgPrize/prizePaket12_1bln.png" alt="">
+                        <img src="assets/imgPrize/prizePaket12_1-month.png" alt="">
                     </div>
                     <?php
                 } elseif ($tmpangpao == "1-week") {
                     ?>
                     <div class="mt-5 d-flex justify-content-center prize">
-                        <img src="assets/imgPrize/prizePaket12_1week.png" alt="">
+                        <img src="assets/imgPrize/prizePaket12_1-week.png" alt="">
+                    </div>
+                    <?php
+                } elseif ($tmpangpao == "2-week") {
+                    ?>
+                    <div class="mt-5 d-flex justify-content-center prize">
+                        <img src="assets/imgPrize/prizePaket6_2-week.png" alt="">
                     </div>
                     <?php
                 }

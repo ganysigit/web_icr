@@ -1,7 +1,7 @@
 /* ----------> Index Page Style Here <----------*/
 
 .bg-img {
-    background-image: url('../assets/page1/bg_blank.png');
+    background-image: url('../assets/page1/bg_blank.jpg');
     background-size: cover;
     min-height: 1000px;
 }

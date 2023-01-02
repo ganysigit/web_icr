@@ -1,14 +1,14 @@
 <?php
 include "function/getSessionDataDiri.php";
-// $tmpnama_anak = $_SESSION['tmpnama_anak'];
-// $tmpumur_anak = $_SESSION['tmpumur_anak'];
-// $tmpasal_sekolah = $_SESSION['tmpasal_sekolah'];
-// $tmpnama_orangtua = $_SESSION['tmpnama_orangtua'];
-// $tmpnohp_orangtua = $_SESSION['tmpnohp_orangtua'];
-// $tmpcentre_terdekat = $_SESSION['tmpcentre_terdekat'];
+$tmpnama_anak = $_SESSION['tmpnama_anak'];
+$tmpumur_anak = $_SESSION['tmpumur_anak'];
+$tmpasal_sekolah = $_SESSION['tmpasal_sekolah'];
+$tmpnama_orangtua = $_SESSION['tmpnama_orangtua'];
+$tmpnohp_orangtua = $_SESSION['tmpnohp_orangtua'];
+$tmpcentre_terdekat = $_SESSION['tmpcentre_terdekat'];
 
-// $dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpcentre_terdekat);
-// echo implode(", ", $dataAll);
+$dataAll = array_merge($tmpnama_anak, $tmpumur_anak, $tmpasal_sekolah, $tmpnama_orangtua, $tmpnohp_orangtua, $tmpcentre_terdekat);
+echo implode(", ", $dataAll);
 
 if($tmpnama_anak == '') {
     header("Location: index.php");
