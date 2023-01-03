@@ -5,7 +5,7 @@ session_start();
 $angpaoPaket6 = [
     '1-week',
     '2-week',
-    '2-month'
+    '1-month'
 ];
 
 shuffle($angpaoPaket6);
@@ -20,4 +20,5 @@ if(isset($_SESSION['tmpangpao'])) {
     header("Location: ../klaimHadiahAngpao.php?click=true");
     die();
 }
+
 ?>

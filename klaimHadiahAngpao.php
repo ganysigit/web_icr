@@ -62,28 +62,42 @@ if(!isset($_SESSION['tmpangpao'])) {
 
             function angpaoLotre() {
                 global $tmpangpao;
-                if($tmpangpao == "2-month") {
+                // Paket 12
+                if($tmpangpao == "2-month_12") {
                     ?>
                     <div class="mt-5 d-flex justify-content-center prize">
                         <img src="assets/imgPrize/prizePaket12_2-month.png" alt="">
                     </div>
                     <?php
-                } elseif ($tmpangpao == "1-month") {
+                } elseif ($tmpangpao == "1-month_12") {
                     ?>
                     <div class="mt-5 d-flex justify-content-center prize">
                         <img src="assets/imgPrize/prizePaket12_1-month.png" alt="">
                     </div>
                     <?php
+                } elseif ($tmpangpao == "2-week_12") {
+                    ?>
+                    <div class="mt-5 d-flex justify-content-center prize">
+                        <img src="assets/imgPrize/prizePaket12_2-week.png" alt="">
+                    </div>
+                    <?php
+                // Paket 6
                 } elseif ($tmpangpao == "1-week") {
                     ?>
                     <div class="mt-5 d-flex justify-content-center prize">
-                        <img src="assets/imgPrize/prizePaket12_1-week.png" alt="">
+                        <img src="assets/imgPrize/prizePaket6_1-week.png" alt="">
                     </div>
                     <?php
                 } elseif ($tmpangpao == "2-week") {
                     ?>
                     <div class="mt-5 d-flex justify-content-center prize">
                         <img src="assets/imgPrize/prizePaket6_2-week.png" alt="">
+                    </div>
+                    <?php
+                } elseif ($tmpangpao == "1-month") {
+                    ?>
+                    <div class="mt-5 d-flex justify-content-center prize">
+                        <img src="assets/imgPrize/prizePaket6_1-month.png" alt="">
                     </div>
                     <?php
                 }

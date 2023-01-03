@@ -1,7 +1,7 @@
 <?php
 
 //Koneksi ke Database
-$conn = mysqli_connect("icanread.co.id", "u761026598_luckyAngpao", "d0RDuNUC/D]", "u761026598_lucky_angpao");
+$conn = mysqli_connect("mysql", "u761026598_luckyAngpao", "d0RDuNUC/D]", "u761026598_lucky_angpao");
 
 // Check connection
 if ($conn->connect_error) {
